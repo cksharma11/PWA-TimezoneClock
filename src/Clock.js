@@ -1,28 +1,21 @@
 import React, { useState } from "react";
-import moment from 'moment-timezone'
+import moment from "moment-timezone";
+import { getDateTimeInfo } from "./utils";
 
-const getAsset = date => {
-  const day = date.split(" ")[0];
-  const hour = date.split(" ")[4].split(":")[0];
-  const minute = date.split(" ")[4].split(":")[1];
-  const second = date.split(" ")[4].split(":")[2];
-  return { day, hour, minute, second };
-};
-
-const  Clock = ({timezone}) => {
-  const [date, setDate] = useState(moment.tz(timezone));
-  const updateDate = () => {
+const Clock = ({ timezone }) => {
+  const [datetime, setDatetime] = useState(moment.tz(timezone));
+  const updateDatetime = () => {
     setTimeout(() => {
-      setDate(moment.tz(timezone));
+      setDatetime(moment.tz(timezone));
     }, 1000);
   };
 
-  const { day, hour, minute, second } = getAsset(date.toString());
+  const { day, hour, minute, second } = getDateTimeInfo(datetime.toString());
 
-  updateDate();
+  updateDatetime();
 
   return (
-    <div className="App">
+    <div className="clock">
       <div className="body">
         <div>
           <div className="box">{day} : </div>
@@ -43,6 +36,6 @@ const  Clock = ({timezone}) => {
       </div>
     </div>
   );
-}
+};
 
 export default Clock;

@@ -2,6 +2,7 @@ html,
 body {
   width: 100%;
   background: whitesmoke;
+  font-family: "Cinzel", serif;
 }
 
 .select-menu {
@@ -14,6 +15,7 @@ body {
   text-align: center;
   margin: 20px;
   border: 2px solid black;
+  font-family: inherit;
 }
 
 .select-menu:focus {
@@ -32,11 +34,15 @@ body {
   margin-top: 15px;
 }
 
-.App {
+.option {
+  font-family: inherit;
+}
+
+.clock {
   font-family: sans-serif;
   text-align: center;
   display: flex;
-  font-family: "Open Sans", sans-serif;
+  font-family: inherit;
   display: flex;
   width: 100%;
   height: 60vh;
@@ -51,6 +57,10 @@ body {
   color: white;
   padding: 35px;
   border-radius: 5px;
+  width: 770px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub {
@@ -60,4 +70,16 @@ body {
 
 .box {
   margin-right: 20px;
+}
+
+.city-name {
+  font-family: inherit;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.city-info {
+  font-family: inherit;
+  font-size: 20px;
+  color: gray;
 }
