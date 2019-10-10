@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import timezonesData from '../src/data/timezones';
 
-function App() {
+const App = () => {
+  const timezones = [];
+  timezonesData.forEach(timezone => {
+    timezones.push.apply(timezones, timezone.utc);
+  })
+
+  const uniqueTimezones = [...new Set(timezones)].sort();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <select>
+        {uniqueTimezones.map(timezone => {
+          return <option value={timezone} key={timezone}>{timezone}</option>
+        })}
+      </select>
     </div>
-  );
+  )
 }
 
 export default App;
