@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/PWA-TimezoneClock/static/css/main.54becbaf.chunk.css",
+    "main.js": "/PWA-TimezoneClock/static/js/main.393e7913.chunk.js",
+    "main.js.map": "/PWA-TimezoneClock/static/js/main.393e7913.chunk.js.map",
+    "runtime-main.js": "/PWA-TimezoneClock/static/js/runtime-main.ac44bff3.js",
+    "runtime-main.js.map": "/PWA-TimezoneClock/static/js/runtime-main.ac44bff3.js.map",
+    "static/js/2.3456eb72.chunk.js": "/PWA-TimezoneClock/static/js/2.3456eb72.chunk.js",
+    "static/js/2.3456eb72.chunk.js.map": "/PWA-TimezoneClock/static/js/2.3456eb72.chunk.js.map",
+    "index.html": "/PWA-TimezoneClock/index.html",
+    "precache-manifest.f3bfa26832821018b0852e262b34e166.js": "/PWA-TimezoneClock/precache-manifest.f3bfa26832821018b0852e262b34e166.js",
+    "service-worker.js": "/PWA-TimezoneClock/service-worker.js",
+    "static/css/main.54becbaf.chunk.css.map": "/PWA-TimezoneClock/static/css/main.54becbaf.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac44bff3.js",
+    "static/js/2.3456eb72.chunk.js",
+    "static/css/main.54becbaf.chunk.css",
+    "static/js/main.393e7913.chunk.js"
+  ]
+}
