@@ -3,6 +3,8 @@ body {
   width: 100%;
   background: whitesmoke;
   font-family: "Cinzel", serif;
+  margin: 0;
+  padding: 0;
 }
 
 .select-menu {
@@ -63,13 +65,45 @@ body {
   align-items: center;
 }
 
+.box {
+  margin-right: 20px;
+  &::after {
+    content: ":";
+  }
+}
+
 .sub {
   font-size: 10px;
   color: gray;
 }
 
-.box {
-  margin-right: 20px;
+@media screen and (max-width: 790px) {
+  .body {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+
+  .clock {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .select-menu {
+    width: 95%;
+  }
+
+  .box {
+    margin-right: 0;
+  }
+
+  .sub {
+    font-size: 15px;
+  }
 }
 
 .city-name {

@@ -13,7 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-sw": "http-server ./build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "eslint": "^6.5.1",
-    "eslint-plugin-react-hooks": "^2.1.2"
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "http-server": "^0.11.1"
   }
 }
